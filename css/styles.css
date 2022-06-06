@@ -19,6 +19,7 @@ body {
     font-family: Roboto, sans-serif;
     background-color: var(--background-color);
     color: var(--main-text-color);
+    max-width: 1600px;
 }
 * {
     box-sizing: border-box;
@@ -42,12 +43,11 @@ ul {
 }
 .hero-container {
     padding: 200px 0px;
-    width: 1600px;
 }
-.section {
+/* .section {
     max-width: 1600px;
     margin: 0 auto;
-}
+} */
 /* Navigation */
 .header-logo {
     color: var(--accent-color);
@@ -95,6 +95,9 @@ ul {
 .header-contacts a:focus {
     color: var(--accent-color);
 }
+.header {
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
 
 
 /* Footer */
@@ -108,6 +111,7 @@ ul {
     letter-spacing: 0.03em;
     text-decoration: none;
 }
+
 .accent-footer {
     color: var(--secondary-accent-color);
 }
@@ -184,9 +188,6 @@ address {
 }
 
 /* Styles index.html */
-.header-section {
-    padding: 24px 0;
-}
 .hero-section {
     background-color: var(--thirdly-background-color);
 }
@@ -202,6 +203,7 @@ address {
 }
 .products-section {
     padding: 0;
+    padding-bottom: 94px;
 }
 
 
@@ -215,6 +217,7 @@ address {
     text-transform: uppercase;
     max-width: 696px;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .quality-about {
@@ -343,6 +346,9 @@ margin-right: 30px;
 .project-description {
     padding: 20px 24px;
 }
+.projects-item:nth-child(n+7) {
+    margin-bottom: 0;
+}
 /* Test */
 .header-list {
     display: flex;
@@ -377,8 +383,19 @@ margin-right: 30px;
 .main-nav {
     display: flex;
     align-items: center;
+    /* border-bottom: 1px solid rgba(236, 236, 236, 1); */
 }
 
 img {
-    margin: 0;
+    display: block;
+}
+
+address {
+    margin-bottom: 9px;
+}
+.footer-contacts-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.logodiv {
+    margin-bottom: 20px;
 }
