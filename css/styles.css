@@ -19,7 +19,7 @@ body {
     font-family: Roboto, sans-serif;
     background-color: var(--background-color);
     color: var(--main-text-color);
-    max-width: 1600px;
+    
 }
 * {
     box-sizing: border-box;
